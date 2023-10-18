@@ -16,5 +16,10 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
