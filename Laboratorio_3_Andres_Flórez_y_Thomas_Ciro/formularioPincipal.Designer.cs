@@ -32,13 +32,12 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.fechaIniText = new System.Windows.Forms.TextBox();
             this.fechaFinText = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@
             this.valorEndulzText = new System.Windows.Forms.TextBox();
             this.valorRegaloText = new System.Windows.Forms.TextBox();
             this.numJugText = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.crearJuegoBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
@@ -67,9 +67,9 @@
             this.label17 = new System.Windows.Forms.Label();
             this.asignarAmigoBtn = new System.Windows.Forms.Button();
             this.editarJugBtn = new System.Windows.Forms.Button();
-            this.envCorreosBtn = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.envCorreosBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -167,19 +167,6 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(335, 174);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Fecha de inicio del juego:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -245,18 +232,18 @@
             this.label6.Text = "Valor del regalo:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label7
+            // label1
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(335, 31);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Datos generales del juego";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(161, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Fecha de inicio del juego:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label8
             // 
@@ -278,7 +265,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.fechaIniText.Location = new System.Drawing.Point(170, 3);
             this.fechaIniText.Name = "fechaIniText";
-            this.fechaIniText.Size = new System.Drawing.Size(162, 20);
+            this.fechaIniText.Size = new System.Drawing.Size(162, 22);
             this.fechaIniText.TabIndex = 7;
             // 
             // fechaFinText
@@ -288,7 +275,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.fechaFinText.Location = new System.Drawing.Point(170, 27);
             this.fechaFinText.Name = "fechaFinText";
-            this.fechaFinText.Size = new System.Drawing.Size(162, 20);
+            this.fechaFinText.Size = new System.Drawing.Size(162, 22);
             this.fechaFinText.TabIndex = 8;
             // 
             // frecEndulzText
@@ -298,7 +285,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.frecEndulzText.Location = new System.Drawing.Point(170, 51);
             this.frecEndulzText.Name = "frecEndulzText";
-            this.frecEndulzText.Size = new System.Drawing.Size(162, 20);
+            this.frecEndulzText.Size = new System.Drawing.Size(162, 22);
             this.frecEndulzText.TabIndex = 9;
             // 
             // numEndulzText
@@ -308,7 +295,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numEndulzText.Location = new System.Drawing.Point(170, 75);
             this.numEndulzText.Name = "numEndulzText";
-            this.numEndulzText.Size = new System.Drawing.Size(162, 20);
+            this.numEndulzText.Size = new System.Drawing.Size(162, 22);
             this.numEndulzText.TabIndex = 10;
             // 
             // valorEndulzText
@@ -318,7 +305,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.valorEndulzText.Location = new System.Drawing.Point(170, 99);
             this.valorEndulzText.Name = "valorEndulzText";
-            this.valorEndulzText.Size = new System.Drawing.Size(162, 20);
+            this.valorEndulzText.Size = new System.Drawing.Size(162, 22);
             this.valorEndulzText.TabIndex = 11;
             // 
             // valorRegaloText
@@ -328,7 +315,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.valorRegaloText.Location = new System.Drawing.Point(170, 123);
             this.valorRegaloText.Name = "valorRegaloText";
-            this.valorRegaloText.Size = new System.Drawing.Size(162, 20);
+            this.valorRegaloText.Size = new System.Drawing.Size(162, 22);
             this.valorRegaloText.TabIndex = 12;
             // 
             // numJugText
@@ -338,8 +325,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numJugText.Location = new System.Drawing.Point(170, 147);
             this.numJugText.Name = "numJugText";
-            this.numJugText.Size = new System.Drawing.Size(162, 20);
+            this.numJugText.Size = new System.Drawing.Size(162, 22);
             this.numJugText.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(335, 31);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Datos generales del juego";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // crearJuegoBtn
             // 
@@ -500,7 +500,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nombreText.Location = new System.Drawing.Point(120, 26);
             this.nombreText.Name = "nombreText";
-            this.nombreText.Size = new System.Drawing.Size(213, 20);
+            this.nombreText.Size = new System.Drawing.Size(213, 22);
             this.nombreText.TabIndex = 6;
             // 
             // emailText
@@ -510,7 +510,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.emailText.Location = new System.Drawing.Point(120, 49);
             this.emailText.Name = "emailText";
-            this.emailText.Size = new System.Drawing.Size(213, 20);
+            this.emailText.Size = new System.Drawing.Size(213, 22);
             this.emailText.TabIndex = 7;
             // 
             // EndulzIdealText
@@ -614,27 +614,18 @@
             this.editarJugBtn.Text = "Editar datos jugador";
             this.editarJugBtn.UseVisualStyleBackColor = true;
             // 
-            // envCorreosBtn
-            // 
-            this.envCorreosBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.envCorreosBtn.Location = new System.Drawing.Point(297, 394);
-            this.envCorreosBtn.Name = "envCorreosBtn";
-            this.envCorreosBtn.Size = new System.Drawing.Size(107, 23);
-            this.envCorreosBtn.TabIndex = 2;
-            this.envCorreosBtn.Text = "Enviar correos";
-            this.envCorreosBtn.UseVisualStyleBackColor = true;
-            // 
             // listBox1
             // 
             this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(3, 33);
             this.listBox1.MultiColumn = true;
             this.listBox1.Name = "listBox1";
             this.listBox1.ScrollAlwaysVisible = true;
-            this.listBox1.Size = new System.Drawing.Size(341, 56);
+            this.listBox1.Size = new System.Drawing.Size(341, 52);
             this.listBox1.TabIndex = 4;
             // 
             // dataGridView1
@@ -645,8 +636,19 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(350, 33);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(342, 64);
             this.dataGridView1.TabIndex = 5;
+            // 
+            // envCorreosBtn
+            // 
+            this.envCorreosBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.envCorreosBtn.Location = new System.Drawing.Point(297, 394);
+            this.envCorreosBtn.Name = "envCorreosBtn";
+            this.envCorreosBtn.Size = new System.Drawing.Size(107, 23);
+            this.envCorreosBtn.TabIndex = 2;
+            this.envCorreosBtn.Text = "Enviar correos";
+            this.envCorreosBtn.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

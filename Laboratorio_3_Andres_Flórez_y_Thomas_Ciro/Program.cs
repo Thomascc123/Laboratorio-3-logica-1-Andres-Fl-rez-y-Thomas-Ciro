@@ -16,7 +16,7 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new formularioPincipal());
         }
     }
 }
