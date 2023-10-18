@@ -53,12 +53,6 @@
     <Compile Include="datosJugador.Designer.cs">
       <DependentUpon>datosJugador.cs</DependentUpon>
     </Compile>
-    <Compile Include="crearJuegoForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="crearJuegoForm.Designer.cs">
-      <DependentUpon>crearJuegoForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="formularioPincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,9 +62,6 @@
     <Compile Include="Jugador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="crearJuegoForm.resx">
-      <DependentUpon>crearJuegoForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="datosJugador.resx">
       <DependentUpon>datosJugador.cs</DependentUpon>
     </EmbeddedResource>

@@ -21,10 +21,5 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
         {
 
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
