@@ -47,17 +47,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AmigoSecreto.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="datosJugador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="datosJugador.Designer.cs">
+      <DependentUpon>datosJugador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularioPincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularioPincipal.Designer.cs">
+      <DependentUpon>formularioPincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Jugador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="datosJugador.resx">
+      <DependentUpon>datosJugador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularioPincipal.resx">
+      <DependentUpon>formularioPincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

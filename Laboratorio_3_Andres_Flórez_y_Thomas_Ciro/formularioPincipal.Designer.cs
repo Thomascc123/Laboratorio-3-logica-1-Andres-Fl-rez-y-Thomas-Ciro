@@ -1,6 +1,6 @@
 ﻿namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 {
-    partial class Form1
+    partial class formularioPincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -244,6 +244,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Fecha de inicio del juego:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label8
             // 
@@ -650,12 +651,12 @@
             this.envCorreosBtn.Text = "Enviar correos";
             this.envCorreosBtn.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // formularioPincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(701, 421);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Form1";
+            this.Name = "formularioPincipal";
             this.Text = "Juguemos Amigo Secreto";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

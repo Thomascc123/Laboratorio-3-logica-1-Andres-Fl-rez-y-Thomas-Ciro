@@ -12,9 +12,32 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 {
     public partial class datosJugador : Form
     {
+
+        formularioPincipal jugadorAux = new formularioPincipal();
+
         public datosJugador()
         {
             InitializeComponent();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addJugador_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

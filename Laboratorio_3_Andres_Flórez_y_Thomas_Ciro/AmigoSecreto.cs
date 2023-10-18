@@ -25,5 +25,7 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             this.freqEndulzadas = freqEndulzadas;
             this.numEndulzadas = numEndulzadas;
         }
+
+
     }
 }
