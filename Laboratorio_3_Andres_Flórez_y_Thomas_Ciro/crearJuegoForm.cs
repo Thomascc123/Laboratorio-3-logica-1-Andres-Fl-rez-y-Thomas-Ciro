@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 {
-    public partial class formularioPincipal : Form
+    public partial class crearJuegoForm : Form
     {
-        public formularioPincipal()
+        public crearJuegoForm()
         {
             InitializeComponent();
         }

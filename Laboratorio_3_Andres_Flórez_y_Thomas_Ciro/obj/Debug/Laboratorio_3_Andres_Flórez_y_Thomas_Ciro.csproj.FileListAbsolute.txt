@@ -9,4 +9,19 @@ C:\Users\thomy\source\repos\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\Laborator
 C:\Users\thomy\source\repos\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.csproj.CoreCompileInputs.cache
 C:\Users\thomy\source\repos\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.exe
 C:\Users\thomy\source\repos\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.pdb
+<<<<<<< HEAD
+C:\Users\admiin\Documents\Proyectos\UdeA\Sem 2023-2\Logica y Representacion 1\Laboratorios\Lab3\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\bin\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.exe.config
+C:\Users\admiin\Documents\Proyectos\UdeA\Sem 2023-2\Logica y Representacion 1\Laboratorios\Lab3\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\bin\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.exe
+C:\Users\admiin\Documents\Proyectos\UdeA\Sem 2023-2\Logica y Representacion 1\Laboratorios\Lab3\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\bin\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.pdb
+C:\Users\admiin\Documents\Proyectos\UdeA\Sem 2023-2\Logica y Representacion 1\Laboratorios\Lab3\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.csproj.AssemblyReference.cache
+C:\Users\admiin\Documents\Proyectos\UdeA\Sem 2023-2\Logica y Representacion 1\Laboratorios\Lab3\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.datosJugador.resources
+C:\Users\admiin\Documents\Proyectos\UdeA\Sem 2023-2\Logica y Representacion 1\Laboratorios\Lab3\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.crearJuegoForm.resources
+C:\Users\admiin\Documents\Proyectos\UdeA\Sem 2023-2\Logica y Representacion 1\Laboratorios\Lab3\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.principalForm.resources
+C:\Users\admiin\Documents\Proyectos\UdeA\Sem 2023-2\Logica y Representacion 1\Laboratorios\Lab3\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.Properties.Resources.resources
+C:\Users\admiin\Documents\Proyectos\UdeA\Sem 2023-2\Logica y Representacion 1\Laboratorios\Lab3\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.csproj.GenerateResource.cache
+C:\Users\admiin\Documents\Proyectos\UdeA\Sem 2023-2\Logica y Representacion 1\Laboratorios\Lab3\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.csproj.CoreCompileInputs.cache
+C:\Users\admiin\Documents\Proyectos\UdeA\Sem 2023-2\Logica y Representacion 1\Laboratorios\Lab3\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.exe
+C:\Users\admiin\Documents\Proyectos\UdeA\Sem 2023-2\Logica y Representacion 1\Laboratorios\Lab3\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.pdb
+=======
 C:\Users\thomy\source\repos\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro\obj\Debug\Laboratorio_3_Andres_Flórez_y_Thomas_Ciro.crearJuegoForm.resources
+>>>>>>> 1d5f1af024bc8ea83003e708c0152c4105e0134c
