@@ -44,33 +44,33 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             Random generador = new Random();
             int minNUmSubGrupos = 1;
             int maxNumSubGrupos = totalJugadores / 2;
-            int subGrupos = generador.Next(minNUmSubGrupos, maxNumSubGrupos);
+            int subGrupos = generador.Next(minNUmSubGrupos, maxNumSubGrupos+1);
             int[] asignacionSubGrupos = new int[subGrupos];
             asignacionSubGrupos = operaciones.AsignarLongSubGrupos(totalJugadores, subGrupos);
             int k = 0;
-            for(int i = 0; i < subGrupos; i++)
+            Jugador[] cadenaDesordenada = new Jugador[totalJugadores];
+            this.jugadores.CopyTo(cadenaDesordenada, 0);
+            operaciones.DesordenarVector(cadenaDesordenada);
+            for (int i = 0; i < subGrupos; i++)
             {
                 int longSubGrupo = asignacionSubGrupos[i];
-                Jugador [] subGrupo = new Jugador[longSubGrupo];
+                Jugador[] subGrupo = new Jugador[longSubGrupo];
                 for(int j = 0; j < longSubGrupo;j++)
                 {
-                    subGrupo[j] = jugadores[k];
+                    subGrupo[j] = cadenaDesordenada[k];
                     k++;
                 }
                 asignarCadena(subGrupo);
             }
         }
 
-        public void asignarCadena(Jugador[] jugadores)
+        public void asignarCadena(Jugador[] jugadoresCadena)
         {
-            int n = jugadores.Length;
-            Jugador[] cadenaDesordenada = new Jugador[n];
-            jugadores.CopyTo(cadenaDesordenada, 0);
-            operaciones.DesordenarVector(cadenaDesordenada);
-            for(int i = 0; i < n; i++)
+            int n = jugadoresCadena.Length;
+            for (int i = 0; i < n; i++)
             {
                 int sig = (i + 1) % n;
-                cadenaDesordenada[i].setAmigoSecreto(cadenaDesordenada[sig]);
+                jugadoresCadena[i].setAmigoSecreto(jugadoresCadena[sig]);
             }
         }
     }
