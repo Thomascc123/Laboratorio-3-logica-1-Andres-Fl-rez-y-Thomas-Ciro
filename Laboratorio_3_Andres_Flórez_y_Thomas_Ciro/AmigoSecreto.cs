@@ -30,14 +30,92 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             this.operaciones = new OperBasicas();
         }
 
+
+        /***************************    setters    *******************************/
+        public void setTotalJugadores(int totalJugadores) 
+        {
+            this.totalJugadores = totalJugadores;
+        }
+
+        public void setFechaInicio(DateTime fechaInicio) 
+        {
+            this.fechaInicio = fechaInicio;
+        }
+
+        public void setFechaFinal(DateTime fechaFinal) 
+        {
+            this.fechaFinal = fechaFinal;
+        }
+
+        public void setFreqEndulzadas(int freqEndulzadas)
+        {
+            this.freqEndulzadas = freqEndulzadas;
+        }
+
+        public void setNumEndulzadas(int numEndulzadas)
+        {
+            this.numEndulzadas = numEndulzadas;
+        }
+
+        public void setValorEndulzada(int valorEndulzada)
+        {
+            this.valorEndulzada = valorEndulzada;
+        }
+
+        public void setvalorRegalo(int valorRegalo)
+        {
+            this.totalJugadores = valorRegalo;
+        }
+        /*************************              Getters            *************************/
+
+        public int getTotalJugadores() {
+            return totalJugadores;
+        }
+
+        public DateTime getFechaInicio()
+        {
+            return this.fechaInicio;
+        }
+
+        public DateTime getFechaFinal()
+        {
+            return this.fechaFinal;
+        }
+
+        public int getFreqEndulzadas()
+        {
+            return this.freqEndulzadas;
+        }
+
+        public int getNumEndulzadas()
+        {
+            return numEndulzadas;
+        }
+
+        public int getValorEndulzada() { 
+            return this.valorEndulzada;
+        }
+
+        public int getValorRegalo() 
+        {
+            return this.valorRegalo;
+        }
+
+
+
         public Jugador getJugador(int pos)
         {
             return jugadores[pos];
         }
+
         public void addJugador(Jugador jugador, int pos)
         {
             jugadores[pos] = jugador;
         }
+
+
+
+
 
         public void asignarAmigoSecreto()
         {

@@ -12,14 +12,24 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 {
     public partial class crearJuegoForm : Form
     {
+        //AmigoSecreto informacionJuego = new AmigoSecreto();
+
         public crearJuegoForm()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+
+
+        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private void initJuegoBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -12,8 +12,11 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 {
     public partial class principalForm : Form
     {
+        crearJuegoForm crearJuegoVentana = new crearJuegoForm();
         public principalForm()
         {
+            
+
             InitializeComponent();
             DateTime fechaInicio = new DateTime(2023, 10, 20, 17, 0, 0);
             DateTime fechaFinal = new DateTime(2023, 11, 20, 17, 0, 0);
@@ -41,5 +44,16 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
                              amSecrNom);
             }
         }
+
+        private void cargarJuegoBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void crearJuegoBtn_Click(object sender, EventArgs e)
+        {
+            crearJuegoVentana.ShowDialog();
+        }
+
     }
 }

@@ -39,13 +39,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.fechaIniText = new System.Windows.Forms.TextBox();
-            this.fechaFinText = new System.Windows.Forms.TextBox();
             this.frecEndulzText = new System.Windows.Forms.TextBox();
             this.numEndulzText = new System.Windows.Forms.TextBox();
             this.valorEndulzText = new System.Windows.Forms.TextBox();
             this.valorRegaloText = new System.Windows.Forms.TextBox();
             this.numJugText = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.initJuegoBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -140,13 +140,13 @@
             this.tableLayoutPanel4.Controls.Add(this.label6, 0, 5);
             this.tableLayoutPanel4.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label8, 0, 6);
-            this.tableLayoutPanel4.Controls.Add(this.fechaIniText, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.fechaFinText, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.frecEndulzText, 1, 2);
             this.tableLayoutPanel4.Controls.Add(this.numEndulzText, 1, 3);
             this.tableLayoutPanel4.Controls.Add(this.valorEndulzText, 1, 4);
             this.tableLayoutPanel4.Controls.Add(this.valorRegaloText, 1, 5);
             this.tableLayoutPanel4.Controls.Add(this.numJugText, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.dateTimePicker1, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.dateTimePicker2, 1, 1);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 32);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 7;
@@ -159,6 +159,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(335, 166);
             this.tableLayoutPanel4.TabIndex = 0;
+            this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
             // 
             // label2
             // 
@@ -251,26 +252,6 @@
             this.label8.Text = "Número de jugadores:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // fechaIniText
-            // 
-            this.fechaIniText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.fechaIniText.Location = new System.Drawing.Point(170, 3);
-            this.fechaIniText.Name = "fechaIniText";
-            this.fechaIniText.Size = new System.Drawing.Size(162, 20);
-            this.fechaIniText.TabIndex = 7;
-            // 
-            // fechaFinText
-            // 
-            this.fechaFinText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.fechaFinText.Location = new System.Drawing.Point(170, 26);
-            this.fechaFinText.Name = "fechaFinText";
-            this.fechaFinText.Size = new System.Drawing.Size(162, 20);
-            this.fechaFinText.TabIndex = 8;
-            // 
             // frecEndulzText
             // 
             this.frecEndulzText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -278,7 +259,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.frecEndulzText.Location = new System.Drawing.Point(170, 49);
             this.frecEndulzText.Name = "frecEndulzText";
-            this.frecEndulzText.Size = new System.Drawing.Size(162, 20);
+            this.frecEndulzText.Size = new System.Drawing.Size(162, 22);
             this.frecEndulzText.TabIndex = 9;
             // 
             // numEndulzText
@@ -288,7 +269,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numEndulzText.Location = new System.Drawing.Point(170, 72);
             this.numEndulzText.Name = "numEndulzText";
-            this.numEndulzText.Size = new System.Drawing.Size(162, 20);
+            this.numEndulzText.Size = new System.Drawing.Size(162, 22);
             this.numEndulzText.TabIndex = 10;
             // 
             // valorEndulzText
@@ -298,7 +279,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.valorEndulzText.Location = new System.Drawing.Point(170, 95);
             this.valorEndulzText.Name = "valorEndulzText";
-            this.valorEndulzText.Size = new System.Drawing.Size(162, 20);
+            this.valorEndulzText.Size = new System.Drawing.Size(162, 22);
             this.valorEndulzText.TabIndex = 11;
             // 
             // valorRegaloText
@@ -308,7 +289,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.valorRegaloText.Location = new System.Drawing.Point(170, 118);
             this.valorRegaloText.Name = "valorRegaloText";
-            this.valorRegaloText.Size = new System.Drawing.Size(162, 20);
+            this.valorRegaloText.Size = new System.Drawing.Size(162, 22);
             this.valorRegaloText.TabIndex = 12;
             // 
             // numJugText
@@ -318,8 +299,22 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numJugText.Location = new System.Drawing.Point(170, 141);
             this.numJugText.Name = "numJugText";
-            this.numJugText.Size = new System.Drawing.Size(162, 20);
+            this.numJugText.Size = new System.Drawing.Size(162, 22);
             this.numJugText.TabIndex = 13;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(170, 3);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(162, 22);
+            this.dateTimePicker1.TabIndex = 14;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(170, 26);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(162, 22);
+            this.dateTimePicker2.TabIndex = 15;
             // 
             // label7
             // 
@@ -343,6 +338,7 @@
             this.initJuegoBtn.TabIndex = 2;
             this.initJuegoBtn.Text = "Inicializar Juego";
             this.initJuegoBtn.UseVisualStyleBackColor = true;
+            this.initJuegoBtn.Click += new System.EventHandler(this.initJuegoBtn_Click);
             // 
             // tableLayoutPanel5
             // 
@@ -382,9 +378,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(3, 32);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(336, 160);
+            this.listBox1.Size = new System.Drawing.Size(336, 148);
             this.listBox1.TabIndex = 3;
             // 
             // tableLayoutPanel6
@@ -503,6 +500,7 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(3, 33);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.Size = new System.Drawing.Size(341, 100);
             this.dataGridView2.TabIndex = 6;
             // 
@@ -550,7 +548,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "crearJuegoForm";
             this.Text = "Juguemos Amigo Secreto";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -583,8 +580,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox fechaIniText;
-        private System.Windows.Forms.TextBox fechaFinText;
         private System.Windows.Forms.TextBox frecEndulzText;
         private System.Windows.Forms.TextBox numEndulzText;
         private System.Windows.Forms.TextBox valorEndulzText;
@@ -606,6 +601,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Button envCorreosBtn;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }
 
