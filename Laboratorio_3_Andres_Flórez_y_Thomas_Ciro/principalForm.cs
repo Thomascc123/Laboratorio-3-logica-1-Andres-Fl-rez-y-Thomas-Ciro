@@ -24,6 +24,14 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             int end = 3;
             AmigoSecreto juegoPrueba = new AmigoSecreto(16, fechaInicio,
                 fechaFinal, feq, end);
+            String archivo = "Juego Nuevo La queso";
+            OperBasicas operaciones = new OperBasicas();
+            int intento = 1;
+            while(operaciones.crearArchivo(archivo, 1) != true)
+            {
+                Console.WriteLine("Error creando archivo, intento: " + intento);
+                intento++;
+            }
             for(int i = 0; i < 16; i++)
             {
                 String nombre = "Jugador " + (i+1);
@@ -42,7 +50,10 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
                 String amSecrNom = amigoSecreto.getNombre();
                 Console.WriteLine("El jugador: " + nombre + " tiene al jugador: " +
                              amSecrNom);
+
             }
+
+
         }
 
         private void cargarJuegoBtn_Click(object sender, EventArgs e)

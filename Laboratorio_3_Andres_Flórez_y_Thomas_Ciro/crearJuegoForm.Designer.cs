@@ -44,8 +44,8 @@
             this.valorEndulzText = new System.Windows.Forms.TextBox();
             this.valorRegaloText = new System.Windows.Forms.TextBox();
             this.numJugText = new System.Windows.Forms.TextBox();
-            this.fechaInicioText = new System.Windows.Forms.DateTimePicker();
             this.fechaFinalText = new System.Windows.Forms.DateTimePicker();
+            this.fechaInicioText = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.initJuegoBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -262,7 +262,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.frecEndulzText.Location = new System.Drawing.Point(275, 59);
             this.frecEndulzText.Name = "frecEndulzText";
-            this.frecEndulzText.Size = new System.Drawing.Size(267, 22);
+            this.frecEndulzText.Size = new System.Drawing.Size(267, 20);
             this.frecEndulzText.TabIndex = 9;
             // 
             // numEndulzText
@@ -272,7 +272,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numEndulzText.Location = new System.Drawing.Point(275, 87);
             this.numEndulzText.Name = "numEndulzText";
-            this.numEndulzText.Size = new System.Drawing.Size(267, 22);
+            this.numEndulzText.Size = new System.Drawing.Size(267, 20);
             this.numEndulzText.TabIndex = 10;
             // 
             // valorEndulzText
@@ -284,7 +284,7 @@
             this.valorEndulzText.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.valorEndulzText.Location = new System.Drawing.Point(275, 115);
             this.valorEndulzText.Name = "valorEndulzText";
-            this.valorEndulzText.Size = new System.Drawing.Size(267, 22);
+            this.valorEndulzText.Size = new System.Drawing.Size(267, 20);
             this.valorEndulzText.TabIndex = 11;
             // 
             // valorRegaloText
@@ -294,7 +294,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.valorRegaloText.Location = new System.Drawing.Point(275, 143);
             this.valorRegaloText.Name = "valorRegaloText";
-            this.valorRegaloText.Size = new System.Drawing.Size(267, 22);
+            this.valorRegaloText.Size = new System.Drawing.Size(267, 20);
             this.valorRegaloText.TabIndex = 12;
             // 
             // numJugText
@@ -304,19 +304,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numJugText.Location = new System.Drawing.Point(275, 171);
             this.numJugText.Name = "numJugText";
-            this.numJugText.Size = new System.Drawing.Size(267, 22);
+            this.numJugText.Size = new System.Drawing.Size(267, 20);
             this.numJugText.TabIndex = 13;
-            // 
-            // fechaInicioText
-            // 
-            this.fechaInicioText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.fechaInicioText.Location = new System.Drawing.Point(275, 3);
-            this.fechaInicioText.Name = "fechaInicioText";
-            this.fechaInicioText.Size = new System.Drawing.Size(267, 22);
-            this.fechaInicioText.TabIndex = 14;
-            this.fechaInicioText.Value = new System.DateTime(2023, 10, 19, 0, 0, 0, 0);
             // 
             // fechaFinalText
             // 
@@ -325,9 +314,20 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.fechaFinalText.Location = new System.Drawing.Point(275, 31);
             this.fechaFinalText.Name = "fechaFinalText";
-            this.fechaFinalText.Size = new System.Drawing.Size(267, 22);
+            this.fechaFinalText.Size = new System.Drawing.Size(267, 20);
             this.fechaFinalText.TabIndex = 15;
             this.fechaFinalText.Value = new System.DateTime(2023, 10, 19, 0, 0, 0, 0);
+            // 
+            // fechaInicioText
+            // 
+            this.fechaInicioText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.fechaInicioText.Location = new System.Drawing.Point(275, 3);
+            this.fechaInicioText.Name = "fechaInicioText";
+            this.fechaInicioText.Size = new System.Drawing.Size(267, 20);
+            this.fechaInicioText.TabIndex = 14;
+            this.fechaInicioText.Value = new System.DateTime(2023, 10, 19, 0, 0, 0, 0);
             // 
             // label7
             // 
@@ -391,10 +391,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(3, 37);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(546, 180);
+            this.listBox1.Size = new System.Drawing.Size(546, 186);
             this.listBox1.TabIndex = 3;
             // 
             // tableLayoutPanel6
