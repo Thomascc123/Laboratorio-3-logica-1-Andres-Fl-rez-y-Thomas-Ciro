@@ -5,11 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Linq.Expressions;
+using System.Windows.Forms;
 
 namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 {
     internal class OperBasicas
     {
+
+
         public void DesordenarVector<T>(IList<T> vector)
         {
             int longitud = vector.Count;
@@ -158,6 +161,50 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
                 return null;
             }
 
+        }
+
+        public void mensajeEmergente(String titulo, String mensaje) {
+            MessageBoxButtons buttons;
+            buttons = MessageBoxButtons.OK;
+            DialogResult result = MessageBox.Show(mensaje, titulo, buttons);
+            Console.WriteLine("ingreso al texto");
+        }
+
+
+        public Boolean validarFecha(DateTime fechaInicio, DateTime fechaFin, int frecEndulzada, int numEndulzadas) {
+            TimeSpan peridoEndulzada = new TimeSpan(frecEndulzada*numEndulzadas,0,0,0);
+            DateTime ultimaendulzada = fechaInicio + peridoEndulzada;
+
+            Console.WriteLine("validacion 1"+(fechaFin <= fechaInicio));
+            Console.WriteLine("validacion 2" + (fechaFin <= DateTime.Today));
+            Console.WriteLine("validacion 3" + (fechaInicio < DateTime.Today));
+            Console.WriteLine("validacion 4" + (fechaFin < ultimaendulzada));
+
+            if (fechaFin <= fechaInicio || fechaFin <= DateTime.Today || fechaInicio < DateTime.Today || fechaFin < ultimaendulzada)
+            {
+                return false;
+            }
+            Console.WriteLine("buena validaciones es true");
+            return true;
+        }
+
+        public Boolean validarIntPositivo(String num) {
+            int x = 0;
+            if (int.TryParse(num, out x)) {
+                int valor = int.Parse(num);
+                if (valor <= 0)
+                {
+                    return false;
+                }
+                else 
+                {
+                    return true;
+                }
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 
