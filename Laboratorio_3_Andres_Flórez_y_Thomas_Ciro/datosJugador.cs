@@ -20,22 +20,36 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             InitializeComponent();
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label13_Click(object sender, EventArgs e)
         {
 
         }
 
         private void addJugador_Click(object sender, EventArgs e)
+        {
+
+            Close();
+        }
+
+        public String getNombre()
+        {
+            return nombreTextBox.Text;
+        }
+
+        public String getEmail()
+        {
+            return emailTextBox.Text;
+        }
+        public String getEndulzadaIdeal()
+        {
+            return EndulzIdealTextBox.Text;
+        }
+        public String getRegaloIdeal()
+        {
+            return RegaloIdealTextBox.Text;
+        }
+
+        private void label15_Click(object sender, EventArgs e)
         {
 
         }

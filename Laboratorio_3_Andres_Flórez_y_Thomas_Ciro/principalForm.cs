@@ -13,18 +13,25 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
     public partial class principalForm : Form
     {
         crearJuegoForm crearJuegoVentana = new crearJuegoForm();
+        OperBasicas operaciones;
+
         public principalForm()
         {
-            
-
+           
             InitializeComponent();
+            operaciones = new OperBasicas();
+            bool existenJuegos = operaciones.existenArchivos();
+            if (existenJuegos)
+            {
+                String[] juegos = operaciones.obtenerJuegos();
+
+            }
             DateTime fechaInicio = new DateTime(2023, 10, 20, 17, 0, 0);
             DateTime fechaFinal = new DateTime(2023, 11, 20, 17, 0, 0);
             int feq = 8;
             int end = 3;
             AmigoSecreto juegoPrueba = new AmigoSecreto(16, fechaInicio,fechaFinal, feq, end, 80000, 40000);
             String archivo = "Juego Nuevo La queso";
-            OperBasicas operaciones = new OperBasicas();
             int intento = 1;
             while(operaciones.crearArchivo(archivo) != true)
             {
@@ -81,6 +88,7 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
         private void crearJuegoBtn_Click(object sender, EventArgs e)
         {
             crearJuegoVentana.ShowDialog();
+            
         }
 
     }

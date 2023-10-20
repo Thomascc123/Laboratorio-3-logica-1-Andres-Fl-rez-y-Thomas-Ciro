@@ -15,6 +15,9 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
         //AmigoSecreto informacionJuego = new AmigoSecreto();
         OperBasicas operaciones; 
         AmigoSecreto datosJuego;
+        datosJugador formDatosJugador = new datosJugador();
+        int posJugador = 0;
+
         public crearJuegoForm()
         {
             InitializeComponent();
@@ -87,5 +90,55 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 
         }
 
+        private void addJugador_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("no entra");
+            if (datosJuego.getJugador(datosJuego.getTotalJugadores()-1) == null)
+            {
+                Console.WriteLine("si entra");
+                formDatosJugador.ShowDialog();
+
+                String nombre = formDatosJugador.getNombre();
+                String email = formDatosJugador.getEmail();
+                String endulzada = formDatosJugador.getEndulzadaIdeal();
+                String regalo = formDatosJugador.getRegaloIdeal();
+
+                if (nombre == "" || email == "" || endulzada == "" || regalo == "")
+                {
+                    operaciones.mensajeEmergente("Error", "Por favor llene todos los campos");
+                }
+                else {
+
+                    if (email.IndexOf("@") == -1)
+                    {
+                        operaciones.mensajeEmergente("Error", "Ingrese un correo valido");
+                    }
+                    else
+                    { 
+
+                        Jugador jugador = new Jugador(nombre, email, endulzada, regalo);
+                        datosJuego.addJugador(jugador,this.posJugador);
+
+                        this.posJugador++;
+
+                        JugadoresBox.Items.Add(nombre);
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

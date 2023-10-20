@@ -181,22 +181,80 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 
         }
 
+        public bool esArchivoTexto(String archivo)
+        {
+            int n = archivo.Length - 5;
+            String formato = archivo.Substring(n);
+            if (formato == ".txt")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool existenArchivos()
+        {
+            String ruta = System.IO.Directory.GetCurrentDirectory();
+            String[] archivos = Directory.GetFiles(ruta);
+            foreach(String archivo in archivos)
+            {
+                if (esArchivoTexto(archivo))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public String[] obtenerJuegos()
+        {
+            String ruta = System.IO.Directory.GetCurrentDirectory();
+            String[] archivos = Directory.GetFiles(ruta);
+            int totalJuegos = 0;
+            foreach (String archivo in archivos)
+            {
+                if (esArchivoTexto(archivo))
+                {
+                    totalJuegos++;
+                }
+            }
+            String[] juegos = new String[totalJuegos];
+            int indJuego = 0;
+            foreach(String archivo in archivos)
+            {
+                if (esArchivoTexto(archivo))
+                {
+                    int n = archivo.Length-6;
+                    String nomJuego = archivo.Substring(0, n);
+                    juegos[indJuego] = nomJuego;
+                    indJuego++;
+                }
+            }
+            return juegos;
+
+        }
+
         public void mensajeEmergente(String titulo, String mensaje) {
             MessageBoxButtons buttons;
             buttons = MessageBoxButtons.OK;
             DialogResult result = MessageBox.Show(mensaje, titulo, buttons);
-            Console.WriteLine("ingreso al texto");
         }
 
-
+        /*
+            *metodo validarFecha
+            *Recibe fechaDeInicio DateTime, fechaFin en DateTime, frecEndulzada en entero, numEndulzadas en entero
+            *
+            *valida que: 1. la fecha de inicio sea anterior a la final, 2. que la fecha final sea posterior a la fecha actual
+            *3. que la fecha de inicio sea posterior a la fecha de hoy, 4. que la fecha final sea posterior a la fecha de la ultima endulzada
+            *
+            *retorna un booleano, true si se cumplen las condiciones, false sino
+        */
         public Boolean validarFecha(DateTime fechaInicio, DateTime fechaFin, int frecEndulzada, int numEndulzadas) {
             TimeSpan peridoEndulzada = new TimeSpan(frecEndulzada*numEndulzadas,0,0,0);
             DateTime ultimaendulzada = fechaInicio + peridoEndulzada;
-
-            Console.WriteLine("validacion 1"+(fechaFin <= fechaInicio));
-            Console.WriteLine("validacion 2" + (fechaFin <= DateTime.Today));
-            Console.WriteLine("validacion 3" + (fechaInicio < DateTime.Today));
-            Console.WriteLine("validacion 4" + (fechaFin < ultimaendulzada));
 
             if (fechaFin <= fechaInicio || fechaFin <= DateTime.Today || fechaInicio < DateTime.Today || fechaFin < ultimaendulzada)
             {
@@ -205,7 +263,14 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             Console.WriteLine("buena validaciones es true");
             return true;
         }
-
+        /*
+            * metodo validarInPositivo
+            * 
+            * recibe un String num
+            * valida que num se pueda convertir en un entero y que sea mayor que cero
+            * 
+            * retorna un booleano true si es un entero positivo, false si no lo es
+        */
         public Boolean validarIntPositivo(String num) {
             int x = 0;
             if (int.TryParse(num, out x)) {
