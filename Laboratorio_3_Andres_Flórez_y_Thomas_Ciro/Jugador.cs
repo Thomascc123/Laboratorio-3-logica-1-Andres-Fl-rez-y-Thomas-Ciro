@@ -83,11 +83,11 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
         public String[] mostrarDatos()
         {
             String[] datos = new string[5];
-            datos[0] = this.nombre;
-            datos[1] = this.correo;
-            datos[2] = this.endulzadaIdeal;
-            datos[3] = this.regaloIdeal;
-            datos[4] = this.amigoSecreto.getNombre();
+            datos[0] = "Nombre: " + this.nombre;
+            datos[1] = "Correo: " + this.correo;
+            datos[2] = "Endulzada ideal: " + this.endulzadaIdeal;
+            datos[3] = "Regalo ideal: " + this.regaloIdeal;
+            datos[4] = "Tiene como amigo a: " + this.amigoSecreto.getNombre();
             return datos;
         }
 

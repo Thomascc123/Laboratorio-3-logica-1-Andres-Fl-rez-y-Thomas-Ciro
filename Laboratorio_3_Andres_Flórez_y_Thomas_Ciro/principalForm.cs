@@ -24,17 +24,20 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             int end = 3;
             AmigoSecreto juegoPrueba = new AmigoSecreto(16, fechaInicio,
                 fechaFinal, feq, end);
-            String archivo = "Juego Nuevo La queso";
+            String archivo = "Juego Nuevo";
             OperBasicas operaciones = new OperBasicas();
             int intento = 1;
-            while(operaciones.crearArchivo(archivo, 1) != true)
+            while(operaciones.crearArchivo(archivo) != true)
             {
                 Console.WriteLine("Error creando archivo, intento: " + intento);
                 intento++;
             }
+            operaciones.escribirLinea(archivo, "Nuevo Juego creado: La queso");
+            String linea = "Fecha de inicio del juego: " + fechaInicio.ToString();
+            operaciones.escribirLinea(archivo, linea);
             for(int i = 0; i < 16; i++)
             {
-                String nombre = "Jugador " + (i+1);
+                String nombre = "Jugador " + (i + 1);
                 String correo = "jugador" + (i + 1) + "@amigosecreto.com";
                 String endulzada = "Dulces de todos tipos";
                 String regalo = "Lo que quieran chicos";
@@ -42,18 +45,33 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
                 juegoPrueba.addJugador(jugador, i);
             }
             juegoPrueba.asignarAmigoSecreto();
+            operaciones.escribirLinea(archivo, "Detalles jugadores");
             for(int i = 0;i < 16;i++)
             {
+                operaciones.escribirLinea(archivo, "Jugador " + i);
                 Jugador jugador = juegoPrueba.getJugador(i);
                 String nombre = jugador.getNombre();
                 Jugador amigoSecreto = jugador.getAmigoSecreto();
                 String amSecrNom = amigoSecreto.getNombre();
                 Console.WriteLine("El jugador: " + nombre + " tiene al jugador: " +
                              amSecrNom);
-
+                String[] datosJugador = jugador.mostrarDatos();
+                int k = datosJugador.Length;
+                for(int j = 0; j < k; j++)
+                {
+                    operaciones.escribirLinea(archivo, datosJugador[j]);
+                }
             }
-
-
+            Console.WriteLine("Leyendo el archivo");
+            String[] lineasArchivo = operaciones.leerArchivo(archivo);
+            if(lineasArchivo != null)
+            {
+                int numLineas = lineasArchivo.Length;
+                for(int cont=0; cont < numLineas; cont++)
+                {
+                    Console.WriteLine(lineasArchivo[cont]);
+                }
+            }
         }
 
         private void cargarJuegoBtn_Click(object sender, EventArgs e)

@@ -51,16 +51,17 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             return asignacion;
         }
 
-        public bool crearArchivo(String nombre, int id)
+        public bool crearArchivo(String nombre)
         {
             String ruta = System.IO.Directory.GetCurrentDirectory();
-            ruta = ruta + @"\" + nombre +" "+ id + ".txt";
+            Console.WriteLine("Directorio actual: " + ruta);
+            ruta = ruta + @"\" + nombre + ".txt";
 
             try
             {
                 using(FileStream fs = File.Create(ruta))
                 {
-                    byte[] texto = new UTF8Encoding(true).GetBytes("Nuevo Juego Creado"+id);
+                    byte[] texto = new UTF8Encoding(true).GetBytes("Nuevo Juego Creado");
                     // Add some information to the file.
                     fs.Write(texto, 0, texto.Length);
                     fs.Close();
@@ -69,6 +70,7 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             }
             catch(Exception e)
             {
+                Console.WriteLine(e.ToString());
                 return false;
             }
         }
@@ -80,18 +82,17 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 
             try
             {
-                using (FileStream fs = File.OpenWrite(ruta))
-                {
-                    byte[] texto = new UTF8Encoding(true).GetBytes(linea);
-                    // Add some information to the file.
-                    fs.Write(texto, 0, texto.Length);
-                    fs.Close();
+                using(StreamWriter sw = File.AppendText(ruta)) 
+                { 
+                    sw.WriteLine(linea);
                 }
+             
                 return true;
 
             }
             catch (Exception e)
             {
+                Console.WriteLine(e.ToString());
                 return false;
             }
         }
@@ -101,7 +102,7 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             String nombreCopia = nombreArchivo + "Copia";
             String ruta = System.IO.Directory.GetCurrentDirectory();
             ruta = ruta + @"\" + nombreArchivo + ".txt";
-            if (crearArchivo(nombreCopia, 0))
+            if (crearArchivo(nombreCopia))
             {
                 try
                 {
@@ -159,6 +160,24 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             }
 
         }
+
+        public String[] leerArchivo(String nombreArchivo)
+        {
+            String ruta = System.IO.Directory.GetCurrentDirectory();
+            ruta = ruta + @"\" + nombreArchivo + ".txt";
+
+            try
+            {
+                String[] result = File.ReadAllLines(ruta);
+                return result;
+            }
+            catch
+            {
+                return null;
+            }
+
+        }
+
     }
 
 
