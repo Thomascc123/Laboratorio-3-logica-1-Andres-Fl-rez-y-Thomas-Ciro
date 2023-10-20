@@ -6,73 +6,73 @@ Nombre: Jugador 1
 Correo: jugador1@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 15
+Tiene como amigo a: Jugador 9
 Jugador 1
 Nombre: Jugador 2
 Correo: jugador2@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 6
+Tiene como amigo a: Jugador 11
 Jugador 2
 Nombre: Jugador 3
 Correo: jugador3@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 7
+Tiene como amigo a: Jugador 12
 Jugador 3
 Nombre: Jugador 4
 Correo: jugador4@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 5
+Tiene como amigo a: Jugador 10
 Jugador 4
 Nombre: Jugador 5
 Correo: jugador5@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 9
+Tiene como amigo a: Jugador 15
 Jugador 5
 Nombre: Jugador 6
 Correo: jugador6@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 10
+Tiene como amigo a: Jugador 14
 Jugador 6
 Nombre: Jugador 7
 Correo: jugador7@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 14
+Tiene como amigo a: Jugador 16
 Jugador 7
 Nombre: Jugador 8
 Correo: jugador8@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 3
+Tiene como amigo a: Jugador 13
 Jugador 8
 Nombre: Jugador 9
 Correo: jugador9@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 16
+Tiene como amigo a: Jugador 1
 Jugador 9
 Nombre: Jugador 10
 Correo: jugador10@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 11
+Tiene como amigo a: Jugador 4
 Jugador 10
 Nombre: Jugador 11
 Correo: jugador11@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 1
+Tiene como amigo a: Jugador 2
 Jugador 11
 Nombre: Jugador 12
 Correo: jugador12@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 13
+Tiene como amigo a: Jugador 3
 Jugador 12
 Nombre: Jugador 13
 Correo: jugador13@amigosecreto.com
@@ -84,16 +84,16 @@ Nombre: Jugador 14
 Correo: jugador14@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 2
+Tiene como amigo a: Jugador 6
 Jugador 14
 Nombre: Jugador 15
 Correo: jugador15@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 12
+Tiene como amigo a: Jugador 5
 Jugador 15
 Nombre: Jugador 16
 Correo: jugador16@amigosecreto.com
 Endulzada ideal: Dulces de todos tipos
 Regalo ideal: Lo que quieran chicos
-Tiene como amigo a: Jugador 4
+Tiene como amigo a: Jugador 7

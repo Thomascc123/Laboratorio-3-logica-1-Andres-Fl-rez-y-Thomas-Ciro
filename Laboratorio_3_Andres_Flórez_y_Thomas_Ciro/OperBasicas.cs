@@ -237,6 +237,14 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 
         }
 
+        /*
+            *metodo mensajeEmergente
+            *
+            *parametros: String titulo, String mensaje
+            *
+            *crea una nueva ventana que muestra el mensaje dado al usurio y el titulo de la ventana es el titulo ingresado.
+        */
+
         public void mensajeEmergente(String titulo, String mensaje) {
             MessageBoxButtons buttons;
             buttons = MessageBoxButtons.OK;

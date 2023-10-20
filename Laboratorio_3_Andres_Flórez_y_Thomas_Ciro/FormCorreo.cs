@@ -13,6 +13,7 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
     public partial class FormCorreo : Form
     {
         OperBasicas operaciones = new OperBasicas();
+        
         public FormCorreo()
         {
             InitializeComponent();
