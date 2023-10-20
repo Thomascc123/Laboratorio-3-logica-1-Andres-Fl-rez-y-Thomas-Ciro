@@ -18,8 +18,12 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
         Jugador[] jugadores;
         OperBasicas operaciones;
 
+        public AmigoSecreto() {
+
+        }
+
         public AmigoSecreto(int totalJugadores, DateTime fechaInicio,
-              DateTime fechaFinal, int freqEndulzadas, int numEndulzadas)
+              DateTime fechaFinal, int freqEndulzadas, int numEndulzadas, int valorEndulzada, int valorRegalo)
         {
             this.totalJugadores = totalJugadores;
             this.jugadores = new Jugador[totalJugadores];
@@ -27,6 +31,8 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             this.fechaFinal = fechaFinal;
             this.freqEndulzadas = freqEndulzadas;
             this.numEndulzadas = numEndulzadas;
+            this.valorEndulzada = valorEndulzada;
+            this.valorRegalo = valorRegalo;
             this.operaciones = new OperBasicas();
         }
 
@@ -113,9 +119,11 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             jugadores[pos] = jugador;
         }
 
-
-
-
+        //
+        public void inicializarVectorJugadores() 
+        {
+            this.jugadores = new Jugador[this.totalJugadores];
+        }
 
         public void asignarAmigoSecreto()
         {

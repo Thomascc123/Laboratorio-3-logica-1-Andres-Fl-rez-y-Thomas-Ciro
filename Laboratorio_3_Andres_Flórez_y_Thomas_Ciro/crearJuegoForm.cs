@@ -13,10 +13,12 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
     public partial class crearJuegoForm : Form
     {
         //AmigoSecreto informacionJuego = new AmigoSecreto();
-
+        OperBasicas operaciones; 
+        AmigoSecreto datosJuego;
         public crearJuegoForm()
         {
             InitializeComponent();
+            operaciones = new OperBasicas();
         }
 
         private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
@@ -26,23 +28,62 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 
         private void initJuegoBtn_Click(object sender, EventArgs e)
         {
-            DateTime fechaInicio = fechaFinalText.Value;
+            DateTime fechaInicio = fechaInicioText.Value;
             DateTime fechaFinal = fechaFinalText.Value;
-            String[] validarDatosJuego = { frecEndulzText.Text, numEndulzText.Text, valorEndulzText.Text, valorRegaloText.Text, valorRegaloText.Text };
+            String[] validarDatosJuego = { frecEndulzText.Text, numEndulzText.Text, valorEndulzText.Text, valorRegaloText.Text, numJugText.Text };
 
             int x = 0;
 
             Boolean validarEnteros = true;
 
+
             for (int i = 0; i < validarDatosJuego.Length; i++) {
 
-                if (!int.TryParse(validarDatosJuego[i], out x))
+                if (!operaciones.validarIntPositivo(validarDatosJuego[i]))
                 {
                     validarEnteros = false;
                 }
+
             }
 
+            if (validarEnteros)
+            {
+                int frecEndulz  = int.Parse(validarDatosJuego[0]);
+                int numEndulz = int.Parse(validarDatosJuego[1]);
+                int valorEndulz = int.Parse(validarDatosJuego[2]);
+                int valorRegalo = int.Parse(validarDatosJuego[3]);
+                int numJug = int.Parse(validarDatosJuego[4]);
 
+                Boolean validarFecha = operaciones.validarFecha(fechaInicio, fechaFinal, frecEndulz, numEndulz);
+
+                if (numJug >= 4)
+                {
+
+                    if (validarFecha)
+                    {
+                        datosJuego = new AmigoSecreto(numJug, fechaInicio, fechaFinal, frecEndulz, numEndulz, valorEndulz, valorRegalo);
+                        operaciones.mensajeEmergente("Creado", "Se ha creado el juego, por favor ingrese los jugadores");
+
+                    }
+                    else
+                    {
+                        // error de fechas
+                        operaciones.mensajeEmergente("Error", "Error, Revise las fechas, la frecuencia de endulzada y el numero de endulzadas");
+                    }
+                }
+                else 
+                {
+                    // el minimo de jugadores debe de ser 4, pues de lo contrario el amigo no seria tan secreto
+                    operaciones.mensajeEmergente("Error", "Error, El minimo de jugadores debe ser 4");
+
+                }
+            }
+            else
+            {
+
+                //error con los valores enteros
+                operaciones.mensajeEmergente("Error", "los valores numericos deben ser enteros positivos");
+            }
 
         }
 

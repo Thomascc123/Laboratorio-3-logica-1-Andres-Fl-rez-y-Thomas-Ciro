@@ -32,7 +32,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelXD = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -136,7 +136,7 @@
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.labelXD, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel4.Controls.Add(this.label5, 0, 4);
@@ -164,18 +164,18 @@
             this.tableLayoutPanel4.TabIndex = 0;
             this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
             // 
-            // label2
+            // labelXD
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelXD.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(266, 28);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Fecha final del juego:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelXD.AutoSize = true;
+            this.labelXD.Location = new System.Drawing.Point(3, 28);
+            this.labelXD.Name = "labelXD";
+            this.labelXD.Size = new System.Drawing.Size(266, 28);
+            this.labelXD.TabIndex = 1;
+            this.labelXD.Text = "Fecha final del juego:";
+            this.labelXD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
@@ -262,7 +262,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.frecEndulzText.Location = new System.Drawing.Point(275, 59);
             this.frecEndulzText.Name = "frecEndulzText";
-            this.frecEndulzText.Size = new System.Drawing.Size(267, 20);
+            this.frecEndulzText.Size = new System.Drawing.Size(267, 22);
             this.frecEndulzText.TabIndex = 9;
             // 
             // numEndulzText
@@ -272,7 +272,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numEndulzText.Location = new System.Drawing.Point(275, 87);
             this.numEndulzText.Name = "numEndulzText";
-            this.numEndulzText.Size = new System.Drawing.Size(267, 20);
+            this.numEndulzText.Size = new System.Drawing.Size(267, 22);
             this.numEndulzText.TabIndex = 10;
             // 
             // valorEndulzText
@@ -284,7 +284,7 @@
             this.valorEndulzText.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.valorEndulzText.Location = new System.Drawing.Point(275, 115);
             this.valorEndulzText.Name = "valorEndulzText";
-            this.valorEndulzText.Size = new System.Drawing.Size(267, 20);
+            this.valorEndulzText.Size = new System.Drawing.Size(267, 22);
             this.valorEndulzText.TabIndex = 11;
             // 
             // valorRegaloText
@@ -294,7 +294,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.valorRegaloText.Location = new System.Drawing.Point(275, 143);
             this.valorRegaloText.Name = "valorRegaloText";
-            this.valorRegaloText.Size = new System.Drawing.Size(267, 20);
+            this.valorRegaloText.Size = new System.Drawing.Size(267, 22);
             this.valorRegaloText.TabIndex = 12;
             // 
             // numJugText
@@ -304,7 +304,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numJugText.Location = new System.Drawing.Point(275, 171);
             this.numJugText.Name = "numJugText";
-            this.numJugText.Size = new System.Drawing.Size(267, 20);
+            this.numJugText.Size = new System.Drawing.Size(267, 22);
             this.numJugText.TabIndex = 13;
             // 
             // fechaFinalText
@@ -314,7 +314,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.fechaFinalText.Location = new System.Drawing.Point(275, 31);
             this.fechaFinalText.Name = "fechaFinalText";
-            this.fechaFinalText.Size = new System.Drawing.Size(267, 20);
+            this.fechaFinalText.Size = new System.Drawing.Size(267, 22);
             this.fechaFinalText.TabIndex = 15;
             this.fechaFinalText.Value = new System.DateTime(2023, 10, 19, 0, 0, 0, 0);
             // 
@@ -325,7 +325,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.fechaInicioText.Location = new System.Drawing.Point(275, 3);
             this.fechaInicioText.Name = "fechaInicioText";
-            this.fechaInicioText.Size = new System.Drawing.Size(267, 20);
+            this.fechaInicioText.Size = new System.Drawing.Size(267, 22);
             this.fechaInicioText.TabIndex = 14;
             this.fechaInicioText.Value = new System.DateTime(2023, 10, 19, 0, 0, 0, 0);
             // 
@@ -391,9 +391,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(3, 37);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(546, 186);
+            this.listBox1.Size = new System.Drawing.Size(546, 180);
             this.listBox1.TabIndex = 3;
             // 
             // tableLayoutPanel6
@@ -584,7 +585,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelXD;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
