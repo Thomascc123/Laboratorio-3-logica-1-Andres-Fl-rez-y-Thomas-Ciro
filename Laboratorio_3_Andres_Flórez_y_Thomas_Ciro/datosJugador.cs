@@ -13,7 +13,6 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
     public partial class datosJugador : Form
     {
 
-        crearJuegoForm jugadorAux = new crearJuegoForm();
 
         public datosJugador()
         {
