@@ -59,6 +59,12 @@
     <Compile Include="crearJuegoForm.Designer.cs">
       <DependentUpon>crearJuegoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCorreo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCorreo.Designer.cs">
+      <DependentUpon>FormCorreo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jugador.cs" />
     <Compile Include="OperBasicas.cs" />
     <Compile Include="principalForm.cs">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="crearJuegoForm.resx">
       <DependentUpon>crearJuegoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCorreo.resx">
+      <DependentUpon>FormCorreo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="principalForm.resx">
       <DependentUpon>principalForm.cs</DependentUpon>

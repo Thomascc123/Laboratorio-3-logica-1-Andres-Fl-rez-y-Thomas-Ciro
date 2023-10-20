@@ -13,9 +13,10 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
     public partial class crearJuegoForm : Form
     {
         //AmigoSecreto informacionJuego = new AmigoSecreto();
+        FormCorreo formCorreo = new FormCorreo();
+        datosJugador formDatosJugador = new datosJugador();
         OperBasicas operaciones; 
         AmigoSecreto datosJuego;
-        datosJugador formDatosJugador = new datosJugador();
         int posJugador = 0;
 
         public crearJuegoForm()
@@ -24,11 +25,13 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             operaciones = new OperBasicas();
         }
 
-        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
+        /*
+            *metido initJuegoBtn_Clic
+            *
+            *es un evento que se encarga de recoger los datos del juego engresados por el usuario en el formulario
+            *y los valida, si estan correctos los almacena en el objeto datosJuego, sino, muestra un mensaje de error
+        */
         private void initJuegoBtn_Click(object sender, EventArgs e)
         {
             DateTime fechaInicio = fechaInicioText.Value;
@@ -90,12 +93,17 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 
         }
 
+        /*
+            *metodo addJugador_Click 
+            *
+            *es un evento que valida si ya esta lleno el array de jugadores de no ser asi abre una ventana
+            *con un formulario que le pide al usuario los datos de un jugador, los valida si estan mal da un mensaje de error,
+            *pero si estan correctos almacena los datos y los imprime
+        */
         private void addJugador_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("no entra");
             if (datosJuego.getJugador(datosJuego.getTotalJugadores()-1) == null)
             {
-                Console.WriteLine("si entra");
                 formDatosJugador.ShowDialog();
 
                 String nombre = formDatosJugador.getNombre();
@@ -123,6 +131,8 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 
                         JugadoresBox.Items.Add(nombre);
 
+                        detallesJugador.Rows.Add(this.posJugador, nombre, email, endulzada, regalo);
+
                     }
 
                 }
@@ -131,14 +141,12 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+
+      
+
+        private void envCorreosBtn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            formCorreo.ShowDialog();
         }
     }
 }
