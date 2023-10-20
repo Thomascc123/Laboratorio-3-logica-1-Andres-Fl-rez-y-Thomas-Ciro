@@ -50,7 +50,7 @@
             this.initJuegoBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.JugadoresBox = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.addJugador = new System.Windows.Forms.Button();
             this.editarJugBtn = new System.Windows.Forms.Button();
@@ -361,7 +361,7 @@
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.listBox1, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.JugadoresBox, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 2);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(560, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -385,17 +385,18 @@
             this.label9.Text = "Jugadores";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // listBox1
+            // JugadoresBox
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.JugadoresBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(3, 37);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(546, 180);
-            this.listBox1.TabIndex = 3;
+            this.JugadoresBox.FormattingEnabled = true;
+            this.JugadoresBox.ItemHeight = 16;
+            this.JugadoresBox.Location = new System.Drawing.Point(3, 37);
+            this.JugadoresBox.Name = "JugadoresBox";
+            this.JugadoresBox.Size = new System.Drawing.Size(546, 180);
+            this.JugadoresBox.TabIndex = 3;
+            this.JugadoresBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // tableLayoutPanel6
             // 
@@ -423,6 +424,7 @@
             this.addJugador.TabIndex = 2;
             this.addJugador.Text = "Añadir Jugador";
             this.addJugador.UseVisualStyleBackColor = true;
+            this.addJugador.Click += new System.EventHandler(this.addJugador_Click);
             // 
             // editarJugBtn
             // 
@@ -504,6 +506,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(552, 126);
             this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // dataGridView2
             // 
@@ -608,7 +611,7 @@
         private System.Windows.Forms.Button asignarAmigoBtn;
         private System.Windows.Forms.Button editarJugBtn;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox JugadoresBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
