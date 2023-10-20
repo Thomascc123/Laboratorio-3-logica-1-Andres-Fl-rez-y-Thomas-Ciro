@@ -22,14 +22,8 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
             DateTime fechaFinal = new DateTime(2023, 11, 20, 17, 0, 0);
             int feq = 8;
             int end = 3;
-            AmigoSecreto juegoPrueba = new AmigoSecreto(16, fechaInicio,
-<<<<<<< HEAD
-                fechaFinal, feq, end);
-            String archivo = "Juego Nuevo";
-=======
-                fechaFinal, feq, end, 80000, 40000);
+            AmigoSecreto juegoPrueba = new AmigoSecreto(16, fechaInicio,fechaFinal, feq, end, 80000, 40000);
             String archivo = "Juego Nuevo La queso";
->>>>>>> thomas
             OperBasicas operaciones = new OperBasicas();
             int intento = 1;
             while(operaciones.crearArchivo(archivo) != true)

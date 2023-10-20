@@ -164,7 +164,6 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 
         }
 
-<<<<<<< HEAD
         public String[] leerArchivo(String nombreArchivo)
         {
             String ruta = System.IO.Directory.GetCurrentDirectory();
@@ -182,7 +181,6 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
 
         }
 
-=======
         public void mensajeEmergente(String titulo, String mensaje) {
             MessageBoxButtons buttons;
             buttons = MessageBoxButtons.OK;
@@ -226,7 +224,7 @@ namespace Laboratorio_3_Andres_Flórez_y_Thomas_Ciro
                 return false;
             }
         }
->>>>>>> thomas
+
     }
 
 
